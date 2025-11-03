@@ -103,8 +103,8 @@ if (window.location.href.includes("forceUnsupportedDimensions")) {
     });
 }
 
-const CNN_INPUT_IMAGE_WIDTH = 256;
-const CNN_INPUT_IMAGE_HEIGHT = 256;
+const CNN_INPUT_IMAGE_WIDTH = 1807;
+const CNN_INPUT_IMAGE_HEIGHT = 1807;
 
 let inputImage = null;
 
@@ -369,8 +369,8 @@ document.getElementById("clear-depth-overrides-button").addEventListener("click"
 });
 
 document.getElementById("resolution-limit-increase-button").addEventListener("click", () => {
-    document.getElementById("height-slider").max = 256;
-    document.getElementById("width-slider").max = 256;
+    document.getElementById("height-slider").max = 1807;
+    document.getElementById("width-slider").max = 1807;
     document.getElementById("resolution-limit-increase-button").hidden = true;
 });
 
@@ -2960,7 +2960,7 @@ document.getElementById("run-example-input").addEventListener("click", () => {
 
 const imageURLMatch =
     window.location.href.match(
-        /image=(https?((:\/\/)|(%3A%2F%2F)))?([-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?)/gi
+        /image=(https?((:\/\/)|(%3A%2F%2F)))?([-a-zA-Z0-9@:%._\+~#=]{1,1807}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?)/gi
     ) ?? [];
 const imageURL =
     imageURLMatch.length > 0 ? imageURLMatch[0].replace(/image=(https?((:\/\/)|(%3A%2F%2F)))?/gi, "") : null;
